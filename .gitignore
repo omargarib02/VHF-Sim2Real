@@ -1,0 +1,26 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Data and Checkpoints (Too large for git)
+data/
+checkpoints/
+*.pth
+*.pt
+*.wav
+*.jsonl
+*.parquet
+
+# Logs and Outputs
+runs/
+wandb/
+*.csv
+*.log
+
+# Environment
+.env
+venv/
+.idea/
+.vscode/
+.DS_Store
