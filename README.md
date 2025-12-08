@@ -1,4 +1,4 @@
-# SimuGAN-Whisper-ATC: Generative Noise Injection for Air Traffic Control ASR
+# VHF-Sim2Real: Generative Noise Injection for Air Traffic Control ASR
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![AIAA SciTech 2026](https://img.shields.io/badge/Accepted-AIAA%20SciTech%202026-blue)](https://www.aiaa.org/SciTech)
