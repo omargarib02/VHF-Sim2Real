@@ -3,7 +3,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![AIAA SciTech 2026](https://img.shields.io/badge/Accepted-AIAA%20SciTech%202026-blue)](https://www.aiaa.org/SciTech)
 
-**Official PyTorch implementation of the paper:** *"SimuGAN-Whisper-ATC: Generative Noise Injection for Improved Automatic Speech Recognition in Air Traffic Control"* Accepted at **AIAA SciTech Forum 2026**.
+**Official PyTorch implementation of the paper:** *"VHF-Sim2Real: Generative Noise Injection for Improved Automatic Speech Recognition in Air Traffic Control"* Accepted at **AIAA SciTech Forum 2026**.
 
 **Authors:** Omar Garib, Mohamed Ghanem, Olivia J. Pinon Fischer, Dimitri N. Mavris  
 **Affiliation:** Aerospace Systems Design Laboratory (ASDL), Georgia Institute of Technology
@@ -14,7 +14,7 @@
 
 Automatic Speech Recognition (ASR) in Air Traffic Control (ATC) faces a severe data scarcity problem: while clean simulation data is abundant, labeled real-world data with realistic Very High Frequency (VHF) noise is rare.
 
-**SimuGAN-Whisper-ATC** bridges this gap using a **Spectrogram-Domain Generative Adversarial Network (SimuGAN)**. We learn realistic VHF noise patterns (squelch, static, channel distortion) from unlabeled real-world audio (TartanAviation) and inject them into clean simulated speech (ATCOSIM).
+**VHF-Sim2Real** bridges this gap using a **Spectrogram-Domain Generative Adversarial Network (SimuGAN)**. We learn realistic VHF noise patterns (squelch, static, channel distortion) from unlabeled real-world audio (TartanAviation) and inject them into clean simulated speech (ATCOSIM).
 
 When fine-tuned on this augmented data, **OpenAI Whisper-Large-v2** achieves a **Word Error Rate (WER) of 3.58%** on the real-world ATCO2 benchmark, representing a **75% relative improvement** over baselines trained without generative augmentation.
 
@@ -26,8 +26,8 @@ When fine-tuned on this augmented data, **OpenAI Whisper-Large-v2** achieves a *
 
 ### 1. Clone Repository
 ```bash
-git clone https://github.com/your-username/SimuGAN-Whisper-ATC.git
-cd SimuGAN-Whisper-ATC
+git clone https://github.com/your-username/VHF-Sim2Real.git
+cd VHF-Sim2Real
 ```
 
 ### 2. Environment Setup
@@ -108,7 +108,7 @@ python scripts/05_evaluate.py \
 ## 📂 Repository Structure
 
 ```text
-SimuGAN-Whisper-ATC/
+VHF-Sim2Real/
 ├── scripts/                # Driver scripts for the pipeline
 │   ├── 01_download_data.py
 │   ├── 02_prepare_datasets.py
@@ -131,7 +131,7 @@ SimuGAN-Whisper-ATC/
 |----------------------|-----------------------------------|-----------------|
 | Whisper (Zero-shot)  | Pre-trained                       | 29.05%          |
 | Whisper Baseline     | ATCOSIM (Clean) + ATCO2           | 14.66%          |
-| **SimuGAN-Whisper-ATC** | **SimuGAN-Augmented + ATCO2**   | **3.58%**       |
+| **VHF-Sim2Real** | **SimuGAN-Augmented + ATCO2**   | **3.58%**       |
 
 -----
 
@@ -141,7 +141,7 @@ If you use this code or dataset strategy, please cite our AIAA SciTech 2026 pape
 
 ```bibtex
 @inproceedings{garib2026simugan,
-  title={SimuGAN-Whisper-ATC: Generative Noise Injection for Improved Automatic Speech Recognition in Air Traffic Control},
+  title={VHF-Sim2Real: Generative Noise Injection for Improved Automatic Speech Recognition in Air Traffic Control},
   author={Garib, Omar and Ghanem, Mohamed and Pinon Fischer, Olivia J. and Mavris, Dimitri N.},
   booktitle={AIAA SciTech 2026 Forum},
   year={2026}
