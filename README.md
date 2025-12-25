@@ -49,7 +49,7 @@ pip install -r requirements.txt
 
 -----
 
-## 🚀 Reproduction Pipeline
+## Reproduction Pipeline
 
 The pipeline consists of 5 sequential steps, orchestrated by the `scripts/` directory.
 
@@ -105,7 +105,7 @@ python scripts/05_evaluate.py \
 
 -----
 
-## 📂 Repository Structure
+## Repository Structure
 
 ```text
 VHF-Sim2Real/
@@ -135,7 +135,7 @@ VHF-Sim2Real/
 
 -----
 
-## 📜 Citation
+## Citation
 
 If you use this code or dataset strategy, please cite our AIAA SciTech 2026 paper:
 
